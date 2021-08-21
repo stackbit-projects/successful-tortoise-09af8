@@ -1,0 +1,104 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  post:
+    type: page
+    label: Post
+    folder: _posts
+    match: '*'
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: datetime
+        name: date
+        label: Date
+      - type: string
+        name: author
+        label: Author
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+  page_1:
+    type: page
+    label: Page 1
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: permalink
+        label: Permalink
+  author:
+    type: data
+    label: Author
+    file: author.yml
+    fields:
+      - type: object
+        name: Jane Doe
+        label: Jane Doe
+        fields:
+          - type: string
+            name: name
+            label: Name
+          - type: image
+            name: picture
+            label: Picture
+          - type: string
+            name: twitter
+            label: Twitter
+          - type: list
+            name: links
+            label: Links
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: title
+                  label: Title
+                - type: string
+                  name: url
+                  label: Url
+                - type: string
+                  name: icon
+                  label: Icon
+      - type: object
+        name: James Duh
+        label: James Duh
+        fields:
+          - type: string
+            name: name
+            label: Name
+          - type: image
+            name: picture
+            label: Picture
+          - type: string
+            name: twitter
+            label: Twitter
+          - type: list
+            name: links
+            label: Links
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: title
+                  label: Title
+                - type: string
+                  name: url
+                  label: Url
+                - type: string
+                  name: icon
+                  label: Icon

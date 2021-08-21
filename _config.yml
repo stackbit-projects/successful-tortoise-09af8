@@ -1,0 +1,47 @@
+title: Bajawa
+description: 'A minimalist, simple, and clean Jekyll theme for blogger and writer.'
+keywords: >-
+  Jekyll, theme, free, download, SEO, blog, web, minimalist, simple, clean,
+  bajawa theme
+url: ''
+baseurl: ''
+cover: ''
+default_author: Jane Doe
+google_analytics: UA-XXXXX-XX
+twitter_username: ''
+comments_enabled: false
+disqus_shortname: ''
+postshare_enabled: false
+github_username: ''
+github_repository: 'https://github.com/kulacino/bajawa'
+permalink: '/:year/:month/:title/'
+markdown: kramdown
+highlighter: rouge
+source: ./
+destination: ./_site
+paginate: 5
+paginate_path: '/blog/page:num/'
+sass:
+  sass_dir: _sass
+  style: compressed
+defaults:
+  - scope:
+      path: assets/images
+    values:
+      image: true
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+navbar:
+  - slug: about
+    title: About
+  - slug: blog
+    title: Blog
+  - slug: search
+    title: Search
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .ruby-version
+  - README.md
+  - bajawa.gemspec
